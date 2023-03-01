@@ -100,7 +100,66 @@ Vector3D Vertex::normal( void ) const {
 EdgeIter HalfedgeMesh::flipEdge( EdgeIter e0 ) {
     // TODO Part 4.
     // This method should flip the given edge and return an iterator to the flipped edge.
-    return EdgeIter();
+
+    if (e0->isBoundary()) {
+        return e0;
+    }
+
+    array<HalfedgeIter, 10> h = {};
+    h[0] = e0->halfedge();
+    h[1] = h[0]->next();
+    h[2] = h[1]->next();
+    h[3] = h[0]->twin();
+    h[4] = h[3]->next();
+    h[5] = h[4]->next();
+    h[6] = h[1]->twin();
+    h[7] = h[2]->twin();
+    h[8] = h[4]->twin();
+    h[9] = h[5]->twin();
+
+    array<VertexIter, 4> v = {};
+    v[0] = h[0]->vertex();
+    v[1] = h[1]->vertex();
+    v[2] = h[2]->vertex();
+    v[3] = h[5]->vertex();
+
+    array<EdgeIter, 5> e = {};
+    e[0] = e0;
+    e[1] = h[1]->edge();
+    e[2] = h[2]->edge();
+    e[3] = h[4]->edge();
+    e[4] = h[5]->edge();
+
+    array<FaceIter, 2> f = {};
+    f[0] = h[0]->face();
+    f[1] = h[3]->face();
+
+    v[0]->halfedge() = h[2];
+    v[1]->halfedge() = h[5];
+    v[2]->halfedge() = h[1];
+    v[3]->halfedge() = h[4];
+
+    e[0]->halfedge() = h[0];
+    e[1]->halfedge() = h[5];
+    e[2]->halfedge() = h[1];
+    e[3]->halfedge() = h[2];
+    e[4]->halfedge() = h[4];
+
+    f[0]->halfedge() = h[0];
+    f[1]->halfedge() = h[3];
+
+    h[0]->setNeighbors(h[1], h[3], v[3], e[0], f[0]);
+    h[1]->setNeighbors(h[2], h[7], v[2], e[2], f[0]);
+    h[2]->setNeighbors(h[0], h[8], v[0], e[3], f[0]);
+    h[3]->setNeighbors(h[4], h[0], v[2], e[0], f[1]);
+    h[4]->setNeighbors(h[5], h[9], v[3], e[4], f[1]);
+    h[5]->setNeighbors(h[3], h[6], v[1], e[1], f[1]);
+    h[6]->setNeighbors(h[6]->next(), h[5], v[2], e[1], h[6]->face());
+    h[7]->setNeighbors(h[7]->next(), h[1], v[0], e[2], h[7]->face());
+    h[8]->setNeighbors(h[8]->next(), h[2], v[3], e[3], h[8]->face());
+    h[9]->setNeighbors(h[9]->next(), h[4], v[1], e[4], h[9]->face());
+
+    return e[0];
 }
 
 VertexIter HalfedgeMesh::splitEdge( EdgeIter e0 ) {
