@@ -1,3 +1,4 @@
+#include <array>
 #include "student_code.h"
 #include "mutablePriorityQueue.h"
 
@@ -72,11 +73,28 @@ Vector3D BezierPatch::evaluate(double u, double v) const {
 }
 
 Vector3D Vertex::normal( void ) const {
-    // TODO Part 3.
     // Returns an approximate unit normal at this vertex, computed by
     // taking the area-weighted average of the normals of neighboring
     // triangles, then normalizing.
-    return Vector3D();
+    HalfedgeCIter halfedge = this->halfedge();
+    Vector3D result(0., 0., 0.);
+    double totalArea = 0;
+    do {
+        FaceCIter face = halfedge->face();
+
+        Vector3D posA = halfedge->vertex()->position;
+        Vector3D vecAB = halfedge->next()->vertex()->position - posA;
+        Vector3D vecAC = halfedge->next()->next()->vertex()->position - posA;
+
+        // norm(∆ABC) = unit(AB x AC) and area(∆ABC) = .5|AB x AC|. So this is
+        // automatically adding the area weighted value with a scaling factor 2,
+        // which doesn't matter because we are normalizing at the end anyway.
+        result += cross(vecAB, vecAC);
+
+        halfedge = halfedge->twin()->next();
+    } while (halfedge != this->halfedge());
+
+    return result.unit();
 }
 
 EdgeIter HalfedgeMesh::flipEdge( EdgeIter e0 ) {
