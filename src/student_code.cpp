@@ -31,8 +31,13 @@ std::vector<Vector2D> BezierCurve::evaluateStep(std::vector<Vector2D> const &poi
  * @return A vector containing intermediate points or the final interpolated vector
  */
 std::vector<Vector3D> BezierPatch::evaluateStep(std::vector<Vector3D> const &points, double t) const {
-    // TODO Part 2.
-    return std::vector<Vector3D>();
+    vector<Vector3D> result = vector<Vector3D>();
+    for (int i = 0; i < points.size() - 1; i++) {
+        Vector3D p = (1 - t) * points[i] + t * points[i + 1];
+        result.push_back(p);
+    }
+
+    return result;
 }
 
 /**
@@ -43,8 +48,11 @@ std::vector<Vector3D> BezierPatch::evaluateStep(std::vector<Vector3D> const &poi
  * @return Final interpolated vector
  */
 Vector3D BezierPatch::evaluate1D(std::vector<Vector3D> const &points, double t) const {
-    // TODO Part 2.
-    return Vector3D();
+    vector<Vector3D> result = points;
+    while (result.size() > 1) {
+        result = evaluateStep(result, t);
+    }
+    return result[0];
 }
 
 /**
@@ -55,8 +63,12 @@ Vector3D BezierPatch::evaluate1D(std::vector<Vector3D> const &points, double t) 
  * @return Final interpolated vector
  */
 Vector3D BezierPatch::evaluate(double u, double v) const {
-    // TODO Part 2.
-    return Vector3D();
+    vector<Vector3D> points = vector<Vector3D>();
+    for (vector<Vector3D> row : this->controlPoints) {
+        points.push_back(evaluate1D(row, u));
+    }
+
+    return evaluate1D(points, v);
 }
 
 Vector3D Vertex::normal( void ) const {
