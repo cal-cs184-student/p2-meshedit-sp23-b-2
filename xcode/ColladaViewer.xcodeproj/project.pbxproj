@@ -1,0 +1,1922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3FC466AD903B4D52B11E2466 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5604C328648B4ADEB0DEF20C /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				4C2715C86BF1DBE97BCAB330 /* Generate CGL/deps/glfw/CMakeFiles/uninstall */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		BAF128BE4162413D947012E0 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F90EB0CD6F294BBBAC1733AD /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				59C02525EC83478BB7D8116B /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		C9F591FD2A0845AD90009555 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5099230C4D6C4F41A6B2FEB8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				D93DEA768B02664EDA50F571 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				4B1EC8BC72CE449896C05E78 /* PBXTargetDependency */,
+				87D576B7E9894308BDC16303 /* PBXTargetDependency */,
+				39FD4CD283D241C19CEF8203 /* PBXTargetDependency */,
+				66591113513E4111BF3C4E6E /* PBXTargetDependency */,
+				E08EBF13CB294BE596FA0C2F /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D6F580D9A6CD484EB38D0F45 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FC4DB1ADD0FE45F1A012B15D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				9024B1412978B8147A65BDDA /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01A830B276974FFB854DEC3E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = 483B251CB48F4731A73A002E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/nsgl_context.m */; };
+		03BF00A58650410D9E99F2B3 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector2D.cpp */ = {isa = PBXBuildFile; fileRef = 2D17CCD1603A4CC0B116A844 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector2D.cpp */; };
+		10E2311AB29B4D1FBEBA67EF /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/tinyxml2.h */ = {isa = PBXBuildFile; fileRef = A876179E78E6453FBA0D432B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/tinyxml2.h */; };
+		16876F521F6F4D6E885FBC65 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/meshEdit.h */ = {isa = PBXBuildFile; fileRef = 194F6339DC664FC1986C7275 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/meshEdit.h */; };
+		1716DF64FA714297917CEAF4 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/glew.c */ = {isa = PBXBuildFile; fileRef = BDDBEBB76B7842E484A042F0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/glew.c */; };
+		1A2084BA65F34AB9973B1B66 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/context.c */ = {isa = PBXBuildFile; fileRef = 4BB37BD09460432583203E6A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/context.c */; };
+		1D6045C80A99436FAB22C632 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/complex.h */ = {isa = PBXBuildFile; fileRef = 75B77B6C04B94CBDA44C7005 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/complex.h */; };
+		1E86C05705F0440A9E3F5658 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/student_code.cpp */ = {isa = PBXBuildFile; fileRef = 43A418F404184905A3839ED0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/student_code.cpp */; };
+		1EE2FE33664442DEA3647D9A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/camera.cpp */ = {isa = PBXBuildFile; fileRef = A2396154D94E40CD8D6BDC51 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/camera.cpp */; };
+		1FB4188196D04A33B6688BC2 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/texture.cpp */ = {isa = PBXBuildFile; fileRef = 1AA253B3DE144899B10F2EEE /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/texture.cpp */; };
+		24DB5B39DA3541CEA5135FD9 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector4D.h */ = {isa = PBXBuildFile; fileRef = F4959EFA73434222A891DDE9 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector4D.h */; };
+		2582DE3A86EA408596D18C97 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/light.h */ = {isa = PBXBuildFile; fileRef = 5F94E78CCA8740CFADD68946 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/light.h */; };
+		26D11946AA2A4090809A43BC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/scene.h */ = {isa = PBXBuildFile; fileRef = C26849A7546B4268900B20DF /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/scene.h */; };
+		28FFC559D1C942BE919FC240 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/complex.cpp */ = {isa = PBXBuildFile; fileRef = 2DBA31C56CC54966B5EA85A0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/complex.cpp */; };
+		2B8C635C3A444ED8860ABCA1 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/viewer.h */ = {isa = PBXBuildFile; fileRef = 2EC89856A58B4C53868A0FBD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/viewer.h */; };
+		2C4177DE89A046E49B47BECD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierPatch.cpp */ = {isa = PBXBuildFile; fileRef = D2793E2F9AF04E53881080B0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierPatch.cpp */; };
+		2E1297E5CC814DFFAC903615 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/meshEdit.cpp */ = {isa = PBXBuildFile; fileRef = CE5BD5041524432997541DB0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/meshEdit.cpp */; };
+		2F9B5D05FF1A4F27A07338C5 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXBuildFile; fileRef = D84AC332629C48B5BC513A22 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework */; };
+		321AB9D58E58446F9F292A2C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/viewer.cpp */ = {isa = PBXBuildFile; fileRef = 8607A0BFDAE24280B8A2EC38 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/viewer.cpp */; };
+		35992627EC4C422094ACA374 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/base64.h */ = {isa = PBXBuildFile; fileRef = 2197ED50F2A84E0791CA8EDC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/base64.h */; };
+		35E20E7B807A4E789818C0D8 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/tinyxml2.cpp */ = {isa = PBXBuildFile; fileRef = 5A2B9B613A5D4479A912419B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/tinyxml2.cpp */; };
+		36E754A51BC94507BF12FBCE /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/png.h */ = {isa = PBXBuildFile; fileRef = 3EB274315B6B4BA2B72405BC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/png.h */; };
+		371DAAFF57F3485CBE417469 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 481FE8F24CAD4D959294F455 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_platform.h */; };
+		37B63E86747B40D784B82FC8 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierPatch.h */ = {isa = PBXBuildFile; fileRef = AB35591B52A14C00AC6E2F91 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierPatch.h */; };
+		3D3030218DAF43F09A5E3F7E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/color.h */ = {isa = PBXBuildFile; fileRef = C86CEAD1DBD044D1844F0051 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/color.h */; };
+		3DCFAE29F43A46CC8BD27123 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreFoundation.framework */ = {isa = PBXBuildFile; fileRef = 601B8357EEA24B5190EA5068 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreFoundation.framework */; };
+		3DE99DE38E2E4CBDB3AF91D9 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/IOKit.framework */ = {isa = PBXBuildFile; fileRef = 355B7F28C40643B4929F7A50 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/IOKit.framework */; };
+		41D8F44DB8054892AF23C8C9 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 855357588CE942BCA9817037 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/main.cpp */; };
+		41DA8700D33740B1A41A38DF /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/CGL.h */ = {isa = PBXBuildFile; fileRef = 0F7B041B231A45E0B88A7799 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/CGL.h */; };
+		44AA3E00ACA94822ABFB00EC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierCurve.cpp */ = {isa = PBXBuildFile; fileRef = 1471F3F674AC47B49B0DBB1E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierCurve.cpp */; };
+		47440A5B0A0D4B80B8EF7F1A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/renderer.h */ = {isa = PBXBuildFile; fileRef = 47D82B9AF9A24FA0965EAA0A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/renderer.h */; };
+		476E469979B540DAA530BF9E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierCurve.h */ = {isa = PBXBuildFile; fileRef = B6F73AC462B84B08826D0A3A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierCurve.h */; };
+		50467D06761F4AA98D7090C1 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 47B124EA820648BBA913DED3 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/monitor.c */; };
+		511FA7F3DC374C159933DF65 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector2D.h */ = {isa = PBXBuildFile; fileRef = 9F662BCF5D10470B8ED2460D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector2D.h */; };
+		54DF45456FB74399BD7D7055 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B31F719A19EA440493452B76 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/CMakeLists.txt */; };
+		5CA34B53BCEF4B979F11EB4D /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreVideo.framework */ = {isa = PBXBuildFile; fileRef = F92A785CD7024935A63E11F1 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreVideo.framework */; };
+		61D94D9DD17D494D8ABDAC13 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/shaderUtils.h */ = {isa = PBXBuildFile; fileRef = 52DBA02DEAB74BA982626484 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/shaderUtils.h */; };
+		6312C47FE4B94866ACD25067 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mergeVertices.h */ = {isa = PBXBuildFile; fileRef = 1E5A0EADCB924B95B6792C6C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mergeVertices.h */; };
+		692385A7F7FA4668A460240B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 82F06F8A07F94A819AA99C0A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/CMakeLists.txt */; };
+		6B6BBD66F56746B48CBEA0D2 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdtext.h */ = {isa = PBXBuildFile; fileRef = 2C784399E4B24EB8B2933A21 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdtext.h */; };
+		6BE973634462479CB132AC04 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = A00376148DFE43B7A722F179 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_init.m */; };
+		744F030E82B845B087284C34 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/Cocoa.framework */ = {isa = PBXBuildFile; fileRef = 830F29D7F3B244A38C915FEE /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/Cocoa.framework */; };
+		7C00CF9E6A8042E5A4FD373A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/material.cpp */ = {isa = PBXBuildFile; fileRef = 7AB781D95CEE4EFB92A0C28C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/material.cpp */; };
+		7C6B73F09E104E7BB2BC7B01 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/base64.cpp */ = {isa = PBXBuildFile; fileRef = A85C1A81BDAE47E9B435415D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/base64.cpp */; };
+		7D407A8BC7E84985B2BDFDB7 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/halfEdgeMesh.cpp */ = {isa = PBXBuildFile; fileRef = 99106CCEA04F41C3802599D4 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/halfEdgeMesh.cpp */; };
+		82FBE722ED7849DD925A6DF3 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/mach_time.c */ = {isa = PBXBuildFile; fileRef = 44F9A41D83E9443E919018B0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/mach_time.c */; };
+		895BD8AC3F724EE9A68813C1 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector4D.cpp */ = {isa = PBXBuildFile; fileRef = 228852E3EA1F48249CA8F39C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector4D.cpp */; };
+		8B154D9DC9B345349DA6AF1E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix3x3.cpp */ = {isa = PBXBuildFile; fileRef = CB11500CEF724E6AA3CD965A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix3x3.cpp */; };
+		8EA05D4593574E85870F40EB /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector3D.cpp */ = {isa = PBXBuildFile; fileRef = DA36FE315C0944EAB17D0710 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector3D.cpp */; };
+		975A3E54DA7840A58AFCCCA7 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/quaternion.cpp */ = {isa = PBXBuildFile; fileRef = A88BE3A8FE3B4A4ABA12D640 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/quaternion.cpp */; };
+		977CA56D787F4116974B9928 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 4663DB1E955147C087422B1C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_monitor.m */; };
+		9BF923EE6F244380B1827B6D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix4x4.cpp */ = {isa = PBXBuildFile; fileRef = 65149C08C0144EFFA3DBD765 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix4x4.cpp */; };
+		A07B6358F6534AE2B1F9E71E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/init.c */ = {isa = PBXBuildFile; fileRef = 20BF8688BCFF4905B04F6055 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/init.c */; };
+		A2F5958282F84DA58C11B669 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mesh.h */ = {isa = PBXBuildFile; fileRef = 4CCC6C539DAE45B5B246988B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mesh.h */; };
+		A69E4E1FBC5A4AD182030F97 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/posix_tls.h */ = {isa = PBXBuildFile; fileRef = 85CD1E7B53194785AB353B07 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/posix_tls.h */; };
+		A726BB88FEAB47A6A5758F61 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 23F626524C8A4300BBA2156D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/include/GLFW/glfw3native.h */; };
+		A96A0F6B80914676AB3C7DD5 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/student_code.h */ = {isa = PBXBuildFile; fileRef = 609A2E77A0F54F7D969DE92D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/student_code.h */; };
+		AB0792FA5BD642CFBE169040 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXBuildFile; fileRef = 04CF6AFD9D194F68B2241EE0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/glewinfo.c */; };
+		AC291BBA4ADB49F1A559E501 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mesh.cpp */ = {isa = PBXBuildFile; fileRef = A1B6551E8BB54FD1B7216C95 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mesh.cpp */; };
+		B00990BBD5A14F9CA57A2FAC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/posix_tls.c */ = {isa = PBXBuildFile; fileRef = A493B599EA7046F9A40D3CC4 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/posix_tls.c */; };
+		B0DAB549075E4DB4A668C26C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix3x3.h */ = {isa = PBXBuildFile; fileRef = AE0009B442764E5C850A518D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix3x3.h */; };
+		B5038F35E7FA49DCADFF9AE9 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/light.cpp */ = {isa = PBXBuildFile; fileRef = E381E05A152845E092A0A308 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/light.cpp */; };
+		B79AEE5FDB0D4928B274CC46 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXBuildFile; fileRef = EC8311089044489EA6103D54 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/visualinfo.c */; };
+		C63DFBBCCA3E4D4C8F5F56EF /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/material.h */ = {isa = PBXBuildFile; fileRef = 4B8CD0C956CF4DEBAC20A66A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/material.h */; };
+		C8BE94E7571A4FDF82775691 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/iokit_joystick.h */ = {isa = PBXBuildFile; fileRef = 58D246CD8CA0420992C28C87 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/iokit_joystick.h */; };
+		CC417A9BCDFD4AAB9A815A53 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/camera.h */ = {isa = PBXBuildFile; fileRef = 9DA087CDE4C9456DA281E8D5 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/camera.h */; };
+		D01EF52E032745FBBF27FD7F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdtext.cpp */ = {isa = PBXBuildFile; fileRef = 06549AEA2E6D40F4B2EA55C8 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdtext.cpp */; };
+		D048E7CA38964BD79775F413 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/halfEdgeMesh.h */ = {isa = PBXBuildFile; fileRef = 19F5C8B268254266AFAD2B82 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/halfEdgeMesh.h */; };
+		D3B3103A43014BD68E2DC82C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/quaternion.h */ = {isa = PBXBuildFile; fileRef = 2A1AD57DEA51479799A39E2F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/quaternion.h */; };
+		DA90B2FAA03B42F4A23933D1 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/internal.h */ = {isa = PBXBuildFile; fileRef = AF0C51A5C3ED46D3BA759C5F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/internal.h */; };
+		DAB8A0AEF7EB463E9C8EE9EB /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector3D.h */ = {isa = PBXBuildFile; fileRef = 9C6C5575038D4EB9B67D863D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector3D.h */; };
+		DD66FA06C21448118B9358CD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 6666958B688B4362912240FD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/glfw_config.h */; };
+		DEA7C51CFB3444C08A2F7C43 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/scene.cpp */ = {isa = PBXBuildFile; fileRef = EB8BFE243B19423EAD7CD8CD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/scene.cpp */; };
+		E36D9DEE7C7F4FC794DF8BB2 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/collada.cpp */ = {isa = PBXBuildFile; fileRef = 50F19F59DBBA494E869AD92A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/collada.cpp */; };
+		E560BC5C219C4CB8867A4DD8 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 2FF016B31CB844508C76BB44 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_window.m */; };
+		E5FBC4A1D8E740E4B362C0BE /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8DD79A86BE6B4F14840F1A22 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/CMakeLists.txt */; };
+		E6E3CD6FB5A648F19FE0BFB1 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/png.cpp */ = {isa = PBXBuildFile; fileRef = A80A6157432C401ABA21997F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/png.cpp */; };
+		E7397176EDC340BCB4556283 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/collada.h */ = {isa = PBXBuildFile; fileRef = B0B44D92BD654AC9AD770BBC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/collada.h */; };
+		E7A9CCCFE47741A39EF4CEA2 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix4x4.h */ = {isa = PBXBuildFile; fileRef = 634D42AE05A24FB583BC5845 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix4x4.h */; };
+		E7E71969689049BB936F292B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdfont.cpp */ = {isa = PBXBuildFile; fileRef = EB74FD4E25044F7183F27462 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdfont.cpp */; };
+		EAC9F0C17518480F8A44D9BA /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = FE43032CD49B4942BB739A5D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/CMakeLists.txt */; };
+		EB1FB64444174D3AA0919997 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/texture.h */ = {isa = PBXBuildFile; fileRef = 1FC0F5CC8F684458B3F0E962 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/texture.h */; };
+		F12D8475E0DA4C9FAC821B42 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 0F70D66D386D418E84320788 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/include/GLFW/glfw3.h */; };
+		F14ADD5E3846453AACBEC865 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 3C672D2846964828A79A6C9E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/nsgl_context.h */; };
+		F30E4C206C5B498C95D411E1 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/window.c */ = {isa = PBXBuildFile; fileRef = 3823B7F566354939BBBF3C54 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/window.c */; };
+		F85223E55BCC47CAA10BC029 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/iokit_joystick.m */ = {isa = PBXBuildFile; fileRef = 1D37D50584B1409CA6B7ED22 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/iokit_joystick.m */; };
+		FB2167F7293F4DC9833B0337 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/input.c */ = {isa = PBXBuildFile; fileRef = 0F1B1EBFB1184079B4739A41 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/input.c */; };
+		FFAB8E55DCE24F6184BBFA0F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/color.cpp */ = {isa = PBXBuildFile; fileRef = 7FD8856B29DB4EDB870519BC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/color.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		888589777CA6406DBD17AB37 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		A05212DB849B48DCA9981D7D /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		B3590398B2DC46AABBEBE3C4 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		EDF3D9A60D8A428FBBD3317F /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		62ADB6415F054B56AB7DF23A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDA7E1C7ECA4C048A6B08C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FEBC2C0CFC449C4B3E9CC74;
+			remoteInfo = meshedit;
+		};
+		8117B8F4BAA54FF4B59683E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDA7E1C7ECA4C048A6B08C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 218A1D56BA1C46689EE45498;
+			remoteInfo = glew;
+		};
+		90C73FE24E5D4CD784653DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDA7E1C7ECA4C048A6B08C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2D3FECD484E460A955A70BC;
+			remoteInfo = CGL;
+		};
+		965BB1DDE75E40B9AC9BF89C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDA7E1C7ECA4C048A6B08C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 218A1D56BA1C46689EE45498;
+			remoteInfo = glew;
+		};
+		A5BCCA2AC94342E4B708C604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDA7E1C7ECA4C048A6B08C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D4D3DDBC6C4CD5AE104AE6;
+			remoteInfo = glfw;
+		};
+		ABFA25D4403A4CBD90CD882A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDA7E1C7ECA4C048A6B08C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2D3FECD484E460A955A70BC;
+			remoteInfo = CGL;
+		};
+		BD51AD7587B64AAE84440806 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDA7E1C7ECA4C048A6B08C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6F580D9A6CD484EB38D0F45;
+			remoteInfo = ZERO_CHECK;
+		};
+		D68FB4FBD83C428D82FEA9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDA7E1C7ECA4C048A6B08C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 218A1D56BA1C46689EE45498;
+			remoteInfo = glew;
+		};
+		DFBC4F401F8B44EB9B3A9CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDA7E1C7ECA4C048A6B08C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9F591FD2A0845AD90009555;
+			remoteInfo = ALL_BUILD;
+		};
+		FC8E8A3CF67049968C3650FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EDA7E1C7ECA4C048A6B08C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D4D3DDBC6C4CD5AE104AE6;
+			remoteInfo = glfw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04CF6AFD9D194F68B2241EE0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/glewinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glewinfo.c; path = CGL/deps/glew/src/glewinfo.c; sourceTree = SOURCE_ROOT; };
+		06549AEA2E6D40F4B2EA55C8 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdtext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdtext.cpp; path = CGL/src/osdtext.cpp; sourceTree = SOURCE_ROOT; };
+		0C7881FE3D2E4AD28E87D85B /* meshedit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = meshedit; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F1B1EBFB1184079B4739A41 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = CGL/deps/glfw/src/input.c; sourceTree = SOURCE_ROOT; };
+		0F70D66D386D418E84320788 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = CGL/deps/glfw/include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		0F7B041B231A45E0B88A7799 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/CGL.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CGL.h; path = CGL/src/CGL.h; sourceTree = SOURCE_ROOT; };
+		1471F3F674AC47B49B0DBB1E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierCurve.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bezierCurve.cpp; path = src/bezierCurve.cpp; sourceTree = SOURCE_ROOT; };
+		194F6339DC664FC1986C7275 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/meshEdit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = meshEdit.h; path = src/meshEdit.h; sourceTree = SOURCE_ROOT; };
+		19F5C8B268254266AFAD2B82 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/halfEdgeMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = halfEdgeMesh.h; path = src/halfEdgeMesh.h; sourceTree = SOURCE_ROOT; };
+		1AA253B3DE144899B10F2EEE /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = texture.cpp; path = src/texture.cpp; sourceTree = SOURCE_ROOT; };
+		1D37D50584B1409CA6B7ED22 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/iokit_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = iokit_joystick.m; path = CGL/deps/glfw/src/iokit_joystick.m; sourceTree = SOURCE_ROOT; };
+		1E5A0EADCB924B95B6792C6C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mergeVertices.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mergeVertices.h; path = src/mergeVertices.h; sourceTree = SOURCE_ROOT; };
+		1FC0F5CC8F684458B3F0E962 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/texture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = texture.h; path = src/texture.h; sourceTree = SOURCE_ROOT; };
+		20BF8688BCFF4905B04F6055 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = CGL/deps/glfw/src/init.c; sourceTree = SOURCE_ROOT; };
+		2197ED50F2A84E0791CA8EDC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/base64.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = base64.h; path = CGL/src/base64.h; sourceTree = SOURCE_ROOT; };
+		228852E3EA1F48249CA8F39C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector4D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector4D.cpp; path = CGL/src/vector4D.cpp; sourceTree = SOURCE_ROOT; };
+		23F626524C8A4300BBA2156D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = CGL/deps/glfw/include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		2A1AD57DEA51479799A39E2F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/quaternion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = quaternion.h; path = CGL/src/quaternion.h; sourceTree = SOURCE_ROOT; };
+		2C784399E4B24EB8B2933A21 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdtext.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = osdtext.h; path = CGL/src/osdtext.h; sourceTree = SOURCE_ROOT; };
+		2D17CCD1603A4CC0B116A844 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector2D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector2D.cpp; path = CGL/src/vector2D.cpp; sourceTree = SOURCE_ROOT; };
+		2DBA31C56CC54966B5EA85A0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/complex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = complex.cpp; path = CGL/src/complex.cpp; sourceTree = SOURCE_ROOT; };
+		2EC89856A58B4C53868A0FBD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/viewer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = viewer.h; path = CGL/src/viewer.h; sourceTree = SOURCE_ROOT; };
+		2FF016B31CB844508C76BB44 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = CGL/deps/glfw/src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		31BC80DC85FA4873874B43EF /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glfw/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		355B7F28C40643B4929F7A50 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/IOKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		3823B7F566354939BBBF3C54 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = CGL/deps/glfw/src/window.c; sourceTree = SOURCE_ROOT; };
+		3C672D2846964828A79A6C9E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = CGL/deps/glfw/src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+		3EB274315B6B4BA2B72405BC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/png.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = png.h; path = src/png.h; sourceTree = SOURCE_ROOT; };
+		43A418F404184905A3839ED0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/student_code.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = student_code.cpp; path = src/student_code.cpp; sourceTree = SOURCE_ROOT; };
+		44F9A41D83E9443E919018B0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/mach_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mach_time.c; path = CGL/deps/glfw/src/mach_time.c; sourceTree = SOURCE_ROOT; };
+		4663DB1E955147C087422B1C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = CGL/deps/glfw/src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		47B124EA820648BBA913DED3 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = CGL/deps/glfw/src/monitor.c; sourceTree = SOURCE_ROOT; };
+		47D82B9AF9A24FA0965EAA0A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/renderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = renderer.h; path = CGL/src/renderer.h; sourceTree = SOURCE_ROOT; };
+		481FE8F24CAD4D959294F455 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = CGL/deps/glfw/src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		483B251CB48F4731A73A002E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = CGL/deps/glfw/src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		4B8CD0C956CF4DEBAC20A66A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/material.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = material.h; path = src/material.h; sourceTree = SOURCE_ROOT; };
+		4BB37BD09460432583203E6A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = CGL/deps/glfw/src/context.c; sourceTree = SOURCE_ROOT; };
+		4CCC6C539DAE45B5B246988B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh.h; path = src/mesh.h; sourceTree = SOURCE_ROOT; };
+		50F19F59DBBA494E869AD92A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/collada.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = collada.cpp; path = src/collada.cpp; sourceTree = SOURCE_ROOT; };
+		52DBA02DEAB74BA982626484 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/shaderUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shaderUtils.h; path = src/shaderUtils.h; sourceTree = SOURCE_ROOT; };
+		58D246CD8CA0420992C28C87 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/iokit_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iokit_joystick.h; path = CGL/deps/glfw/src/iokit_joystick.h; sourceTree = SOURCE_ROOT; };
+		5A2B9B613A5D4479A912419B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/tinyxml2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyxml2.cpp; path = CGL/src/tinyxml2.cpp; sourceTree = SOURCE_ROOT; };
+		5F94E78CCA8740CFADD68946 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/light.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = light.h; path = src/light.h; sourceTree = SOURCE_ROOT; };
+		601B8357EEA24B5190EA5068 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreFoundation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		609A2E77A0F54F7D969DE92D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/student_code.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = student_code.h; path = src/student_code.h; sourceTree = SOURCE_ROOT; };
+		634D42AE05A24FB583BC5845 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix4x4.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = matrix4x4.h; path = CGL/src/matrix4x4.h; sourceTree = SOURCE_ROOT; };
+		65149C08C0144EFFA3DBD765 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix4x4.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix4x4.cpp; path = CGL/src/matrix4x4.cpp; sourceTree = SOURCE_ROOT; };
+		6666958B688B4362912240FD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = xcode/CGL/deps/glfw/src/glfw_config.h; sourceTree = SOURCE_ROOT; };
+		70AD8CBBB5754EB2BBD52FF8 /* CGL */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCGL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B77B6C04B94CBDA44C7005 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/complex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = complex.h; path = CGL/src/complex.h; sourceTree = SOURCE_ROOT; };
+		77B0A00DD7D442C893B516E4 /* glew */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB781D95CEE4EFB92A0C28C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/material.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = material.cpp; path = src/material.cpp; sourceTree = SOURCE_ROOT; };
+		7FD8856B29DB4EDB870519BC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = CGL/src/color.cpp; sourceTree = SOURCE_ROOT; };
+		82F06F8A07F94A819AA99C0A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glew/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		830F29D7F3B244A38C915FEE /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/Cocoa.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		855357588CE942BCA9817037 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		85CD1E7B53194785AB353B07 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = CGL/deps/glfw/src/posix_tls.h; sourceTree = SOURCE_ROOT; };
+		8607A0BFDAE24280B8A2EC38 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/viewer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = viewer.cpp; path = CGL/src/viewer.cpp; sourceTree = SOURCE_ROOT; };
+		8DD79A86BE6B4F14840F1A22 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		99106CCEA04F41C3802599D4 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/halfEdgeMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = halfEdgeMesh.cpp; path = src/halfEdgeMesh.cpp; sourceTree = SOURCE_ROOT; };
+		9C6C5575038D4EB9B67D863D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector3D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector3D.h; path = CGL/src/vector3D.h; sourceTree = SOURCE_ROOT; };
+		9DA087CDE4C9456DA281E8D5 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera.h; path = src/camera.h; sourceTree = SOURCE_ROOT; };
+		9F662BCF5D10470B8ED2460D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector2D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector2D.h; path = CGL/src/vector2D.h; sourceTree = SOURCE_ROOT; };
+		A00376148DFE43B7A722F179 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = CGL/deps/glfw/src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		A1B6551E8BB54FD1B7216C95 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mesh.cpp; path = src/mesh.cpp; sourceTree = SOURCE_ROOT; };
+		A2396154D94E40CD8D6BDC51 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = src/camera.cpp; sourceTree = SOURCE_ROOT; };
+		A493B599EA7046F9A40D3CC4 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = CGL/deps/glfw/src/posix_tls.c; sourceTree = SOURCE_ROOT; };
+		A80A6157432C401ABA21997F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/png.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = png.cpp; path = src/png.cpp; sourceTree = SOURCE_ROOT; };
+		A85C1A81BDAE47E9B435415D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/base64.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = base64.cpp; path = CGL/src/base64.cpp; sourceTree = SOURCE_ROOT; };
+		A876179E78E6453FBA0D432B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/tinyxml2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tinyxml2.h; path = CGL/src/tinyxml2.h; sourceTree = SOURCE_ROOT; };
+		A88BE3A8FE3B4A4ABA12D640 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quaternion.cpp; path = CGL/src/quaternion.cpp; sourceTree = SOURCE_ROOT; };
+		AB35591B52A14C00AC6E2F91 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierPatch.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bezierPatch.h; path = src/bezierPatch.h; sourceTree = SOURCE_ROOT; };
+		ADF50ADBA0E4455A816C6969 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0009B442764E5C850A518D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix3x3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = matrix3x3.h; path = CGL/src/matrix3x3.h; sourceTree = SOURCE_ROOT; };
+		AF0C51A5C3ED46D3BA759C5F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = CGL/deps/glfw/src/internal.h; sourceTree = SOURCE_ROOT; };
+		B0B44D92BD654AC9AD770BBC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/collada.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collada.h; path = src/collada.h; sourceTree = SOURCE_ROOT; };
+		B31F719A19EA440493452B76 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B4466F179F214BEF9DC27484 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B6F73AC462B84B08826D0A3A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierCurve.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bezierCurve.h; path = src/bezierCurve.h; sourceTree = SOURCE_ROOT; };
+		BDDBEBB76B7842E484A042F0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/glew.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glew.c; path = CGL/deps/glew/src/glew.c; sourceTree = SOURCE_ROOT; };
+		C26849A7546B4268900B20DF /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/scene.h; sourceTree = SOURCE_ROOT; };
+		C86CEAD1DBD044D1844F0051 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/color.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = color.h; path = CGL/src/color.h; sourceTree = SOURCE_ROOT; };
+		CB11500CEF724E6AA3CD965A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix3x3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matrix3x3.cpp; path = CGL/src/matrix3x3.cpp; sourceTree = SOURCE_ROOT; };
+		CE5BD5041524432997541DB0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/meshEdit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = meshEdit.cpp; path = src/meshEdit.cpp; sourceTree = SOURCE_ROOT; };
+		D2793E2F9AF04E53881080B0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierPatch.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bezierPatch.cpp; path = src/bezierPatch.cpp; sourceTree = SOURCE_ROOT; };
+		D84AC332629C48B5BC513A22 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		DA36FE315C0944EAB17D0710 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector3D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vector3D.cpp; path = CGL/src/vector3D.cpp; sourceTree = SOURCE_ROOT; };
+		E381E05A152845E092A0A308 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/light.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = light.cpp; path = src/light.cpp; sourceTree = SOURCE_ROOT; };
+		EB74FD4E25044F7183F27462 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdfont.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = osdfont.cpp; path = CGL/src/osdfont.cpp; sourceTree = SOURCE_ROOT; };
+		EB8BFE243B19423EAD7CD8CD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/scene.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scene.cpp; path = src/scene.cpp; sourceTree = SOURCE_ROOT; };
+		EC8311089044489EA6103D54 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/visualinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = visualinfo.c; path = CGL/deps/glew/src/visualinfo.c; sourceTree = SOURCE_ROOT; };
+		F4959EFA73434222A891DDE9 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector4D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vector4D.h; path = CGL/src/vector4D.h; sourceTree = SOURCE_ROOT; };
+		F92A785CD7024935A63E11F1 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreVideo.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		FE43032CD49B4942BB739A5D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CGL/deps/glfw/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2DEE160B5F14548A15927C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF88A0917C247EEA79F0524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58200E7619144EA9B24777C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFC1F86C3224F8E8C1EF229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		249AC9ABAF5F440A8291ACE7 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				AE11528CE9AD42A5824166BB /* Source Files */,
+				8663FE40009544158740537E /* Header Files */,
+				FE43032CD49B4942BB739A5D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		28E9DCF1685F4F42BDC4009E /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				5B6E735C82FF42C193A32EC4 /* Source Files */,
+				82F06F8A07F94A819AA99C0A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/CMakeLists.txt */,
+			);
+			name = glew;
+			sourceTree = "<group>";
+		};
+		2E3FFA772C4D4120B20D10CB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		37CEC21E7982439CB6B15CD7 /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				249AC9ABAF5F440A8291ACE7 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		587BC8283A514E7798874498 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				5DB5A60FF5DD4DE6B87ECD42 /* CMake Rules */,
+				31BC80DC85FA4873874B43EF /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		58FD72FF1C6F45FFB96053E6 /* CGL */ = {
+			isa = PBXGroup;
+			children = (
+				91D34EC2C2B1414284456E4E /* Source Files */,
+				F112827BA2AF4B0CA5241A40 /* Header Files */,
+				8DD79A86BE6B4F14840F1A22 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/CMakeLists.txt */,
+			);
+			name = CGL;
+			sourceTree = "<group>";
+		};
+		5B6E735C82FF42C193A32EC4 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDDBEBB76B7842E484A042F0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/glew.c */,
+				04CF6AFD9D194F68B2241EE0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/glewinfo.c */,
+				EC8311089044489EA6103D54 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/visualinfo.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5DB5A60FF5DD4DE6B87ECD42 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		68F7440AB94B4A82894D29AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70AD8CBBB5754EB2BBD52FF8 /* CGL */,
+				77B0A00DD7D442C893B516E4 /* glew */,
+				ADF50ADBA0E4455A816C6969 /* glfw */,
+				0C7881FE3D2E4AD28E87D85B /* meshedit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DBBA26A185E42E7B696B1E9 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6F73AC462B84B08826D0A3A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierCurve.h */,
+				AB35591B52A14C00AC6E2F91 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierPatch.h */,
+				9DA087CDE4C9456DA281E8D5 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/camera.h */,
+				B0B44D92BD654AC9AD770BBC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/collada.h */,
+				19F5C8B268254266AFAD2B82 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/halfEdgeMesh.h */,
+				5F94E78CCA8740CFADD68946 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/light.h */,
+				4B8CD0C956CF4DEBAC20A66A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/material.h */,
+				1E5A0EADCB924B95B6792C6C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mergeVertices.h */,
+				4CCC6C539DAE45B5B246988B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mesh.h */,
+				194F6339DC664FC1986C7275 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/meshEdit.h */,
+				3EB274315B6B4BA2B72405BC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/png.h */,
+				C26849A7546B4268900B20DF /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/scene.h */,
+				52DBA02DEAB74BA982626484 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/shaderUtils.h */,
+				609A2E77A0F54F7D969DE92D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/student_code.h */,
+				1FC0F5CC8F684458B3F0E962 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/texture.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		8663FE40009544158740537E /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F70D66D386D418E84320788 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/include/GLFW/glfw3.h */,
+				23F626524C8A4300BBA2156D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/include/GLFW/glfw3native.h */,
+				481FE8F24CAD4D959294F455 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_platform.h */,
+				AF0C51A5C3ED46D3BA759C5F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/internal.h */,
+				58D246CD8CA0420992C28C87 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/iokit_joystick.h */,
+				3C672D2846964828A79A6C9E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/nsgl_context.h */,
+				85CD1E7B53194785AB353B07 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/posix_tls.h */,
+				6666958B688B4362912240FD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/glfw_config.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		91D34EC2C2B1414284456E4E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A85C1A81BDAE47E9B435415D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/base64.cpp */,
+				7FD8856B29DB4EDB870519BC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/color.cpp */,
+				2DBA31C56CC54966B5EA85A0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/complex.cpp */,
+				CB11500CEF724E6AA3CD965A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix3x3.cpp */,
+				65149C08C0144EFFA3DBD765 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix4x4.cpp */,
+				EB74FD4E25044F7183F27462 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdfont.cpp */,
+				06549AEA2E6D40F4B2EA55C8 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdtext.cpp */,
+				A88BE3A8FE3B4A4ABA12D640 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/quaternion.cpp */,
+				5A2B9B613A5D4479A912419B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/tinyxml2.cpp */,
+				2D17CCD1603A4CC0B116A844 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector2D.cpp */,
+				DA36FE315C0944EAB17D0710 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector3D.cpp */,
+				228852E3EA1F48249CA8F39C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector4D.cpp */,
+				8607A0BFDAE24280B8A2EC38 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/viewer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9246DD2692C34E809180FFE4 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				2E3FFA772C4D4120B20D10CB /* CMake Rules */,
+				B4466F179F214BEF9DC27484 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		AE11528CE9AD42A5824166BB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A00376148DFE43B7A722F179 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_init.m */,
+				4663DB1E955147C087422B1C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_monitor.m */,
+				2FF016B31CB844508C76BB44 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_window.m */,
+				4BB37BD09460432583203E6A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/context.c */,
+				20BF8688BCFF4905B04F6055 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/init.c */,
+				0F1B1EBFB1184079B4739A41 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/input.c */,
+				1D37D50584B1409CA6B7ED22 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/iokit_joystick.m */,
+				44F9A41D83E9443E919018B0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/mach_time.c */,
+				47B124EA820648BBA913DED3 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/monitor.c */,
+				483B251CB48F4731A73A002E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/nsgl_context.m */,
+				A493B599EA7046F9A40D3CC4 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/posix_tls.c */,
+				3823B7F566354939BBBF3C54 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		BBD7849534FE430BB5B7498C /* meshedit */ = {
+			isa = PBXGroup;
+			children = (
+				F84C809A6CC748B59ED63F5C /* Source Files */,
+				7DBBA26A185E42E7B696B1E9 /* Header Files */,
+				B31F719A19EA440493452B76 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/CMakeLists.txt */,
+			);
+			name = meshedit;
+			sourceTree = "<group>";
+		};
+		D8BFD8F3985A4BCF9D86684B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				830F29D7F3B244A38C915FEE /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/Cocoa.framework */,
+				D84AC332629C48B5BC513A22 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/OpenGL.framework */,
+				355B7F28C40643B4929F7A50 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/IOKit.framework */,
+				601B8357EEA24B5190EA5068 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreFoundation.framework */,
+				F92A785CD7024935A63E11F1 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/CoreVideo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F112827BA2AF4B0CA5241A40 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F7B041B231A45E0B88A7799 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/CGL.h */,
+				2197ED50F2A84E0791CA8EDC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/base64.h */,
+				C86CEAD1DBD044D1844F0051 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/color.h */,
+				75B77B6C04B94CBDA44C7005 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/complex.h */,
+				AE0009B442764E5C850A518D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix3x3.h */,
+				634D42AE05A24FB583BC5845 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix4x4.h */,
+				2C784399E4B24EB8B2933A21 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdtext.h */,
+				2A1AD57DEA51479799A39E2F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/quaternion.h */,
+				47D82B9AF9A24FA0965EAA0A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/renderer.h */,
+				A876179E78E6453FBA0D432B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/tinyxml2.h */,
+				9F662BCF5D10470B8ED2460D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector2D.h */,
+				9C6C5575038D4EB9B67D863D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector3D.h */,
+				F4959EFA73434222A891DDE9 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector4D.h */,
+				2EC89856A58B4C53868A0FBD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/viewer.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		F84C809A6CC748B59ED63F5C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1471F3F674AC47B49B0DBB1E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierCurve.cpp */,
+				D2793E2F9AF04E53881080B0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierPatch.cpp */,
+				A2396154D94E40CD8D6BDC51 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/camera.cpp */,
+				50F19F59DBBA494E869AD92A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/collada.cpp */,
+				99106CCEA04F41C3802599D4 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/halfEdgeMesh.cpp */,
+				E381E05A152845E092A0A308 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/light.cpp */,
+				855357588CE942BCA9817037 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/main.cpp */,
+				7AB781D95CEE4EFB92A0C28C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/material.cpp */,
+				A1B6551E8BB54FD1B7216C95 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mesh.cpp */,
+				CE5BD5041524432997541DB0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/meshEdit.cpp */,
+				A80A6157432C401ABA21997F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/png.cpp */,
+				EB8BFE243B19423EAD7CD8CD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/scene.cpp */,
+				43A418F404184905A3839ED0 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/student_code.cpp */,
+				1AA253B3DE144899B10F2EEE /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/texture.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		FF8C7421484844E8AB617721 = {
+			isa = PBXGroup;
+			children = (
+				9246DD2692C34E809180FFE4 /* ALL_BUILD */,
+				28E9DCF1685F4F42BDC4009E /* glew */,
+				587BC8283A514E7798874498 /* uninstall */,
+				37CEC21E7982439CB6B15CD7 /* GLFW3 */,
+				58FD72FF1C6F45FFB96053E6 /* CGL */,
+				BBD7849534FE430BB5B7498C /* meshedit */,
+				68F7440AB94B4A82894D29AF /* Products */,
+				D8BFD8F3985A4BCF9D86684B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05D4D3DDBC6C4CD5AE104AE6 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C0FA77AEBD4EDEB729C9E9 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				C4E75411611E447DA921F4C4 /* Sources */,
+				BAF88A0917C247EEA79F0524 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = ADF50ADBA0E4455A816C6969 /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+		218A1D56BA1C46689EE45498 /* glew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1E7D17983434C21A14BC753 /* Build configuration list for PBXNativeTarget "glew" */;
+			buildPhases = (
+				412EAFBB936742EC8B27DE11 /* Sources */,
+				A2DEE160B5F14548A15927C9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glew;
+			productName = glew;
+			productReference = 77B0A00DD7D442C893B516E4 /* glew */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2FEBC2C0CFC449C4B3E9CC74 /* meshedit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F216913855545019D933CF2 /* Build configuration list for PBXNativeTarget "meshedit" */;
+			buildPhases = (
+				4D03237E11CA42CC9FAABB31 /* Sources */,
+				E58200E7619144EA9B24777C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCA94804C80D4A1189FC8891 /* PBXTargetDependency */,
+				A7E56D633FFE451795FE5BE8 /* PBXTargetDependency */,
+				995209830C1342A1A1E3A463 /* PBXTargetDependency */,
+			);
+			name = meshedit;
+			productName = meshedit;
+			productReference = 0C7881FE3D2E4AD28E87D85B /* meshedit */;
+			productType = "com.apple.product-type.tool";
+		};
+		F2D3FECD484E460A955A70BC /* CGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B872CAF8A344DA9ED54014 /* Build configuration list for PBXNativeTarget "CGL" */;
+			buildPhases = (
+				AC501183C6F745FE872BE527 /* Sources */,
+				FBFC1F86C3224F8E8C1EF229 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE9CBBE8AD224A6EBACCC233 /* PBXTargetDependency */,
+			);
+			name = CGL;
+			productName = CGL;
+			productReference = 70AD8CBBB5754EB2BBD52FF8 /* CGL */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EDA7E1C7ECA4C048A6B08C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1340;
+			};
+			buildConfigurationList = B8871590DF9F4044ADDF17FC /* Build configuration list for PBXProject "ColladaViewer" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				B3590398B2DC46AABBEBE3C4 /* Debug */,
+				888589777CA6406DBD17AB37 /* Release */,
+				A05212DB849B48DCA9981D7D /* MinSizeRel */,
+				EDF3D9A60D8A428FBBD3317F /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = FF8C7421484844E8AB617721;
+			projectDirPath = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2";
+			projectRoot = "";
+			targets = (
+				C9F591FD2A0845AD90009555 /* ALL_BUILD */,
+				F2D3FECD484E460A955A70BC /* CGL */,
+				D6F580D9A6CD484EB38D0F45 /* ZERO_CHECK */,
+				218A1D56BA1C46689EE45498 /* glew */,
+				05D4D3DDBC6C4CD5AE104AE6 /* glfw */,
+				BAF128BE4162413D947012E0 /* install */,
+				2FEBC2C0CFC449C4B3E9CC74 /* meshedit */,
+				3FC466AD903B4D52B11E2466 /* uninstall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3C8B9B9628600475EB03CBF8 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4C2715C86BF1DBE97BCAB330 /* Generate CGL/deps/glfw/CMakeFiles/uninstall */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CGL/deps/glfw/CMakeFiles/uninstall";
+			outputPaths = (
+"/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/CMakeFiles/uninstall"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -P /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/cmake_uninstall.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -P /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/cmake_uninstall.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -P /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/cmake_uninstall.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -P /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/cmake_uninstall.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9024B1412978B8147A65BDDA /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  make -f /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  make -f /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  make -f /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  make -f /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  /usr/local/Cellar/cmake/3.25.2/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D93DEA768B02664EDA50F571 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		412EAFBB936742EC8B27DE11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1716DF64FA714297917CEAF4 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/glew.c */,
+				AB0792FA5BD642CFBE169040 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/glewinfo.c */,
+				B79AEE5FDB0D4928B274CC46 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/src/visualinfo.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D03237E11CA42CC9FAABB31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44AA3E00ACA94822ABFB00EC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierCurve.cpp */,
+				2C4177DE89A046E49B47BECD /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/bezierPatch.cpp */,
+				1EE2FE33664442DEA3647D9A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/camera.cpp */,
+				E36D9DEE7C7F4FC794DF8BB2 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/collada.cpp */,
+				7D407A8BC7E84985B2BDFDB7 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/halfEdgeMesh.cpp */,
+				B5038F35E7FA49DCADFF9AE9 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/light.cpp */,
+				41D8F44DB8054892AF23C8C9 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/main.cpp */,
+				7C00CF9E6A8042E5A4FD373A /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/material.cpp */,
+				AC291BBA4ADB49F1A559E501 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/mesh.cpp */,
+				2E1297E5CC814DFFAC903615 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/meshEdit.cpp */,
+				E6E3CD6FB5A648F19FE0BFB1 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/png.cpp */,
+				DEA7C51CFB3444C08A2F7C43 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/scene.cpp */,
+				1E86C05705F0440A9E3F5658 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/student_code.cpp */,
+				1FB4188196D04A33B6688BC2 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/texture.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC501183C6F745FE872BE527 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6B73F09E104E7BB2BC7B01 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/base64.cpp */,
+				FFAB8E55DCE24F6184BBFA0F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/color.cpp */,
+				28FFC559D1C942BE919FC240 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/complex.cpp */,
+				8B154D9DC9B345349DA6AF1E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix3x3.cpp */,
+				9BF923EE6F244380B1827B6D /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/matrix4x4.cpp */,
+				E7E71969689049BB936F292B /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdfont.cpp */,
+				D01EF52E032745FBBF27FD7F /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/osdtext.cpp */,
+				975A3E54DA7840A58AFCCCA7 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/quaternion.cpp */,
+				35E20E7B807A4E789818C0D8 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/tinyxml2.cpp */,
+				03BF00A58650410D9E99F2B3 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector2D.cpp */,
+				8EA05D4593574E85870F40EB /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector3D.cpp */,
+				895BD8AC3F724EE9A68813C1 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/vector4D.cpp */,
+				321AB9D58E58446F9F292A2C /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src/viewer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4E75411611E447DA921F4C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE973634462479CB132AC04 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_init.m */,
+				977CA56D787F4116974B9928 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_monitor.m */,
+				E560BC5C219C4CB8867A4DD8 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/cocoa_window.m */,
+				1A2084BA65F34AB9973B1B66 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/context.c */,
+				A07B6358F6534AE2B1F9E71E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/init.c */,
+				FB2167F7293F4DC9833B0337 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/input.c */,
+				F85223E55BCC47CAA10BC029 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/iokit_joystick.m */,
+				82FBE722ED7849DD925A6DF3 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/mach_time.c */,
+				50467D06761F4AA98D7090C1 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/monitor.c */,
+				01A830B276974FFB854DEC3E /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/nsgl_context.m */,
+				B00990BBD5A14F9CA57A2FAC /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/posix_tls.c */,
+				F30E4C206C5B498C95D411E1 /* /Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39FD4CD283D241C19CEF8203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05D4D3DDBC6C4CD5AE104AE6 /* glfw */;
+			targetProxy = A5BCCA2AC94342E4B708C604 /* PBXContainerItemProxy */;
+		};
+		4B1EC8BC72CE449896C05E78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6F580D9A6CD484EB38D0F45 /* ZERO_CHECK */;
+			targetProxy = BD51AD7587B64AAE84440806 /* PBXContainerItemProxy */;
+		};
+		59C02525EC83478BB7D8116B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9F591FD2A0845AD90009555 /* ALL_BUILD */;
+			targetProxy = DFBC4F401F8B44EB9B3A9CD1 /* PBXContainerItemProxy */;
+		};
+		66591113513E4111BF3C4E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2D3FECD484E460A955A70BC /* CGL */;
+			targetProxy = ABFA25D4403A4CBD90CD882A /* PBXContainerItemProxy */;
+		};
+		87D576B7E9894308BDC16303 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 218A1D56BA1C46689EE45498 /* glew */;
+			targetProxy = 965BB1DDE75E40B9AC9BF89C /* PBXContainerItemProxy */;
+		};
+		995209830C1342A1A1E3A463 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2D3FECD484E460A955A70BC /* CGL */;
+			targetProxy = 90C73FE24E5D4CD784653DBD /* PBXContainerItemProxy */;
+		};
+		A7E56D633FFE451795FE5BE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05D4D3DDBC6C4CD5AE104AE6 /* glfw */;
+			targetProxy = FC8E8A3CF67049968C3650FB /* PBXContainerItemProxy */;
+		};
+		AE9CBBE8AD224A6EBACCC233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 218A1D56BA1C46689EE45498 /* glew */;
+			targetProxy = 8117B8F4BAA54FF4B59683E4 /* PBXContainerItemProxy */;
+		};
+		DCA94804C80D4A1189FC8891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 218A1D56BA1C46689EE45498 /* glew */;
+			targetProxy = D68FB4FBD83C428D82FEA9E3 /* PBXContainerItemProxy */;
+		};
+		E08EBF13CB294BE596FA0C2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FEBC2C0CFC449C4B3E9CC74 /* meshedit */;
+			targetProxy = 62ADB6415F054B56AB7DF23A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06A6248DDCCC41158BCC6B72 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0B9C44E741144FA484943404 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		10C9549A061F40878DCF0E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		140A5A6A886A4E90B8486065 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -w   -Wall","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/glfw.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		24F40B1DFD19438880C403F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2D9750CF1E6C43D28DF85A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3BF571CE9C4E4ED1BA7E8E8D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3FB433AC94EA449B9C159843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		540299918F264A5E904E529B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5C153069DC9B47C28BBD22BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/include",/usr/local/include/freetype2,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "   -Wno-deprecated-declarations -Wno-c++11-extensions ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/src/Debug/libCGL.a","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glew/Debug/libglew.a","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/Debug/libglfw3.a","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreFoundation","-Xlinker -framework -Xlinker CoreVideo","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker OpenGL",/usr/local/lib/libfreetype.dylib,"/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/dirent/glut32.lib","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreFoundation","-Xlinker -framework -Xlinker CoreVideo",/usr/local/lib/libfreetype.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/meshedit.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5F55742360DE4B0197F59B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6ABC0F514A52490C8B7DAA5D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/src/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/include","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/include",/usr/local/include/freetype2,"/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -Wno-constant-conversion ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/CGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		764AA3939F73406497CDCF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		78FF46F63B02429AB4B5302F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glew/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -w ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/glew.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		7CC9CB0302CB45029F66FFBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build";
+			};
+			name = Release;
+		};
+		810479B36890467481615B71 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/include",/usr/local/include/freetype2,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wno-deprecated-declarations -Wno-c++11-extensions ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/src/MinSizeRel/libCGL.a","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glew/MinSizeRel/libglew.a","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/MinSizeRel/libglfw3.a","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreFoundation","-Xlinker -framework -Xlinker CoreVideo","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker OpenGL",/usr/local/lib/libfreetype.dylib,"/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/dirent/glut32.lib","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreFoundation","-Xlinker -framework -Xlinker CoreVideo",/usr/local/lib/libfreetype.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/meshedit.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		87B935C3C6F848E0A5EE0225 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8851732AC6254AF6804248DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/src/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/include","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/include",/usr/local/include/freetype2,"/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wno-constant-conversion ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/CGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8B5CE6A3866C42DD8DAE740D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glew/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -w ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/glew.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9157D41CCEC64CEB88130871 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		981627D73DA94DE685D2B8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -w   -Wall","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/glfw.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		AEE29CA8732F4060BAE765B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -fPIC -w   -Wall","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/glfw.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B05074D14A0A4B12AB78C2B7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/src/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/include","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/include",/usr/local/include/freetype2,"/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wno-constant-conversion ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/CGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BB1B5AE68F63466B9C3639D0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,_GLFW_USE_CONFIG_H,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glfw/src","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG -fPIC -w   -Wall","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/glfw.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C08749EF5976470EAD3028CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/src/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/include","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/include",/usr/local/include/freetype2,"/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   -Wno-constant-conversion ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CGL;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/CGL.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CA0B185D63B340FF95042EF1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/include",/usr/local/include/freetype2,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -Wno-deprecated-declarations -Wno-c++11-extensions ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/src/RelWithDebInfo/libCGL.a","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glew/RelWithDebInfo/libglew.a","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/RelWithDebInfo/libglfw3.a","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreFoundation","-Xlinker -framework -Xlinker CoreVideo","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker OpenGL",/usr/local/lib/libfreetype.dylib,"/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/dirent/glut32.lib","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreFoundation","-Xlinker -framework -Xlinker CoreVideo",/usr/local/lib/libfreetype.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/meshedit.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D605FED7028B4A36864DB7AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build";
+			};
+			name = Debug;
+		};
+		DD9FF7DFDA564F02AD3C6754 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E118F573A19F4F04B01C9DD5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glew/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG -w ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/glew.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E39320CC7F96490A848BB64D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glew/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLEW_STATIC,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/deps/glew/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -w ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glew;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/glew.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E52F20069C83440BA7C0D802 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		E8E6A2ECC18542B2A9FDB1ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F1ED26FD942246359387EFCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/CGL/include",/usr/local/include/freetype2,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -Wno-deprecated-declarations -Wno-c++11-extensions ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/src/Release/libCGL.a","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glew/Release/libglew.a","/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/CGL/deps/glfw/src/Release/libglfw3.a","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreFoundation","-Xlinker -framework -Xlinker CoreVideo","-Xlinker -framework -Xlinker OpenGL","-Xlinker -framework -Xlinker OpenGL",/usr/local/lib/libfreetype.dylib,"/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/src/dirent/glut32.lib","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker CoreFoundation","-Xlinker -framework -Xlinker CoreVideo",/usr/local/lib/libfreetype.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshedit;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build/meshedit.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F686A0E8B8E84C57991E89EB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FD4D0D421AFA48CDBFFA7313 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/rachellee/desktop/cs184/p2-meshedit-sp23-b-2/xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		FDDEA43EE9DD40F48ABBF8CA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F216913855545019D933CF2 /* Build configuration list for PBXNativeTarget "meshedit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C153069DC9B47C28BBD22BB /* Debug */,
+				F1ED26FD942246359387EFCB /* Release */,
+				810479B36890467481615B71 /* MinSizeRel */,
+				CA0B185D63B340FF95042EF1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5099230C4D6C4F41A6B2FEB8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F55742360DE4B0197F59B67 /* Debug */,
+				540299918F264A5E904E529B /* Release */,
+				87B935C3C6F848E0A5EE0225 /* MinSizeRel */,
+				FDDEA43EE9DD40F48ABBF8CA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5604C328648B4ADEB0DEF20C /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E6A2ECC18542B2A9FDB1ED /* Debug */,
+				764AA3939F73406497CDCF3A /* Release */,
+				3BF571CE9C4E4ED1BA7E8E8D /* MinSizeRel */,
+				06A6248DDCCC41158BCC6B72 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		84B872CAF8A344DA9ED54014 /* Build configuration list for PBXNativeTarget "CGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C08749EF5976470EAD3028CE /* Debug */,
+				8851732AC6254AF6804248DB /* Release */,
+				B05074D14A0A4B12AB78C2B7 /* MinSizeRel */,
+				6ABC0F514A52490C8B7DAA5D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B8871590DF9F4044ADDF17FC /* Build configuration list for PBXProject "ColladaViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D605FED7028B4A36864DB7AF /* Debug */,
+				7CC9CB0302CB45029F66FFBB /* Release */,
+				E52F20069C83440BA7C0D802 /* MinSizeRel */,
+				FD4D0D421AFA48CDBFFA7313 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D1E7D17983434C21A14BC753 /* Build configuration list for PBXNativeTarget "glew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39320CC7F96490A848BB64D /* Debug */,
+				78FF46F63B02429AB4B5302F /* Release */,
+				8B5CE6A3866C42DD8DAE740D /* MinSizeRel */,
+				E118F573A19F4F04B01C9DD5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E1C0FA77AEBD4EDEB729C9E9 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEE29CA8732F4060BAE765B5 /* Debug */,
+				981627D73DA94DE685D2B8BA /* Release */,
+				140A5A6A886A4E90B8486065 /* MinSizeRel */,
+				BB1B5AE68F63466B9C3639D0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F90EB0CD6F294BBBAC1733AD /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB433AC94EA449B9C159843 /* Debug */,
+				24F40B1DFD19438880C403F2 /* Release */,
+				DD9FF7DFDA564F02AD3C6754 /* MinSizeRel */,
+				9157D41CCEC64CEB88130871 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FC4DB1ADD0FE45F1A012B15D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10C9549A061F40878DCF0E5F /* Debug */,
+				2D9750CF1E6C43D28DF85A7D /* Release */,
+				F686A0E8B8E84C57991E89EB /* MinSizeRel */,
+				0B9C44E741144FA484943404 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EDA7E1C7ECA4C048A6B08C2 /* Project object */;
+}
