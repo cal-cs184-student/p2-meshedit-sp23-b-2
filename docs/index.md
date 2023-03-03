@@ -52,12 +52,22 @@ After flip:
 ***
 ### Part 5: Edge Split
 - **Briefly explain how you implemented the edge split operation and describe any interesting implementation / debugging tricks you have used.**
-    - Unlike in part 4 where we just set the new pointers with new neighboring mesh elements, edge splitting requires adding a new vertex that acts as a midpoint for opposing vertices along an edge. We first check if the edge is again a boundary edge, in which case we just return the edge from the function.
+    - Unlike in part 4 where we just set the new pointers with new neighboring mesh elements, edge splitting requires adding a new vertex that acts as a midpoint for opposing vertices along an edge. We first check if the edge is again a boundary edge, in which case we just return the edge from the function. Then, we use the same method as in Part 4 to traverse through the mesh elements using the ```next()``` and ```twin()``` functions, while also storing 6 new half-edges, 1 new vertices, 3 new edges, and 2 new faces. Finally, we update the pointers for the newly added vertex and neighboring vertices as well as the pointers for the new edges using ```setNeighbors```.
+     
 - **Show screenshots of a mesh before and after some edge splits.**
+Before split:
+![before-split](./images/task5/before-split.png)
+After split:
+![after-split](./images/task5/after-split.png)
 - **Show screenshots of a mesh before and after a combination of both edge splits and edge flips.**
+Before splitting & flipping:
+![before-split](./images/task5/before-split.png)
+Before splitting & flipping:
+![split-flip](./images/task5/split-flip.png)
 - **Write about your eventful debugging journey, if you have experienced one.**
-    - We used the following diagram to visualize the edge-splitting process and 
-- **If you have implemented support for boundary edges, show screenshots of your implementation properly handling split operations on boundary edges.**
+    - We used the following diagram to visualize the edge-splitting process and mesh traversal: 
+![diagram](./images/task5/task5.png)
+    Since a lot of logic of the mesh traversal was reused from part 4, there were fewer issues when debugging the proper half-edges and vertex pointers. To keep our mesh elements organized, we stored the added vertices, edges, and faces in their corresponding lists and set the updated half-edge pointers for the modified mesh at the end one by one to ensure that each pointer was properly set with its updated neighboring elements one at a time. 
 ***
 ### Part 6: Loop Subdivision for Mesh Upsampling
 - **Briefly explain how you implemented the loop subdivision and describe any interesting implementation / debugging tricks you have used.**
