@@ -30,8 +30,14 @@
 
 ### Task 3: Area-Weighted Vertex Normals
 - **Briefly explain how you implemented the area-weighted vertex normals.**
+    - To compute the area-weighted normal at a given vertex, we first iterated through the triangle faces neighboring the vertex using the ```face()``` and ```next()``` methods in the half edge data structure. We also called ```vertex()->position``` to get the neighboring vertices and their corresponding positions. Then, for each adjacent face we found the normal vector by calculating the cross product of the two edge vectors of the face and multiplied by its area. The result is then added to a 3D Vector result which keeps track of the current neighboring cross products calculated so far. Finally, we return the result’s unit vector. 
 - **Show screenshots of dae/teapot.dae (not .bez) comparing teapot shading with and without vertex normals. Use Q to toggle default flat shading and Phong shading.**
     - Default shading:
         ![teapot.dae-default](./images/task3/task3-default.png)
     - Phong shading:
         ![teapot.dae-phong](./images/task3/task3-shading.png)
+
+### Task 4: Edge Flip
+- **Briefly explain how you implemented the edge flip operation and describe any interesting implementation / debugging tricks you have used.**
+- **Show screenshots of a mesh before and after some edge flips.**
+- **Write about your eventful debugging journey, if you have experienced one.**
