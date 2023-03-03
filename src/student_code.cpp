@@ -261,13 +261,6 @@ VertexIter HalfedgeMesh::splitEdge( EdgeIter e0 ) {
     return v[4];
 }
 
-set<VertexCIter> getEdgeVertices(EdgeCIter edge) {
-    set<VertexCIter> result;
-    result.insert(edge->halfedge()->vertex());
-    result.insert(edge->halfedge()->twin()->vertex());
-    return result;
-}
-
 void MeshResampler::upsample( HalfedgeMesh& mesh ) {
     // TODO Part 6.
     // This routine should increase the number of triangles in the mesh using Loop subdivision.
@@ -332,8 +325,6 @@ void MeshResampler::upsample( HalfedgeMesh& mesh ) {
         vertex->isNew = false;
 
     for (EdgeIter edge : edges) {
-        set<VertexCIter> edgeVertices = getEdgeVertices(edge);
-
         VertexIter vertex = mesh.splitEdge(edge);
         vertex->newPosition = edge->newPosition;
     }
