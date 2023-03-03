@@ -11,7 +11,7 @@ In this project, we implemented de Casteljau's algorithm for evaluating Bezier c
 
 **Briefly explain de Casteljau's algorithm and how you implemented it in order to evaluate Bezier curves.**
 
-De Casteljau’s algorithm is useful for evaluating Bezier curves provided a set of control points. The algorithm essentially uses linear interpolation to create subdivisions of the curve by adding a new point **along** each line segment edge and dividing it into new line segments. We calculate the new point at a given parameter t by using the formula: ```p'_i = lerp(p_i, p_(i+1), t) = (1-t)*p_i + t*p_(i+1)```
+De Casteljau’s algorithm is useful for evaluating Bezier curves provided a set of control points. The algorithm essentially uses linear interpolation to create subdivisions of the curve by adding a new point **along** each line segment edge and dividing it into new line segments. We calculate the new point at a given parameter t by using the formula: $$p'_i = lerp(p_i, p_{(i+1)}, t) = (1-t)*p_i + t*p_{(i+1)}$$
 
 In ```evaluateStep```, we iteratively calculate a new point from the set of control (or intermediate) points provided in the input using the above formula ```points.size() - 1``` times. Then, we add the new point to the 2D vector result and return the updated vector array containing the interpolated points.
 
@@ -140,17 +140,49 @@ We encountered some bugs while trying to find the right pointers for the next ha
 ### Part 5: Edge Split
 **Briefly explain how you implemented the edge split operation and describe any interesting implementation / debugging tricks you have used.**
 
-Unlike in part 4 where we just set the new pointers with new neighboring mesh elements, edge splitting requires adding a new vertex that acts as a midpoint for opposing vertices along an edge. We first check if the edge is again a boundary edge, in which case we just return the edge from the function.
+Unlike in part 4 where we just set the new pointers with new neighboring mesh elements, edge splitting requires adding a new vertex that acts as a midpoint for opposing vertices along an edge. We first check if the edge is again a boundary edge, in which case we just return the edge from the function. Then, we use the same method as in Part 4 to traverse through the mesh elements using the ```next()``` and ```twin()``` functions, while also storing 6 new half-edges, 1 new vertices, 3 new edges, and 2 new faces. Finally, we update the pointers for the newly added vertex and neighboring vertices as well as the pointers for the new edges using ```setNeighbors```.
 
 **Show screenshots of a mesh before and after some edge splits.**
 
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/task5/before-split.png" align="middle" width="400px"/>
+        <figcaption align="middle">before split</figcaption>
+      </td>
+      <td>
+        <img src="images/task5/after-split.png" align="middle" width="400px"/>
+        <figcaption align="middle">after split</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
 **Show screenshots of a mesh before and after a combination of both edge splits and edge flips.**
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/task5/before-split.png" align="middle" width="400px"/>
+        <figcaption align="middle">before split flip</figcaption>
+      </td>
+      <td>
+        <img src="images/task5/split-flip.png" align="middle" width="400px"/>
+        <figcaption align="middle">after split flip</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
 
 **Write about your eventful debugging journey, if you have experienced one.**
 
-We used the following diagram to visualize the edge-splitting process and 
+We used the following diagram to visualize the edge-splitting process and mesh traversal
 
-**If you have implemented support for boundary edges, show screenshots of your implementation properly handling split operations on boundary edges.**
+![diagram](./images/task5/task5.png)
+
+Since a lot of logic of the mesh traversal was reused from part 4, there were fewer issues when debugging the proper half-edges and vertex pointers. To keep our mesh elements organized, we stored the added vertices, edges, and faces in their corresponding lists and set the updated half-edge pointers for the modified mesh at the end one by one to ensure that each pointer was properly set with its updated neighboring elements one at a time.
 
 ***
 
