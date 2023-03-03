@@ -27,7 +27,7 @@
 - **Show a screenshot of bez/teapot.bez (not .dae) evaluated by your implementation.**
     - ![teapot.bez](./images/task2.png)
 
-
+***
 ### Task 3: Area-Weighted Vertex Normals
 - **Briefly explain how you implemented the area-weighted vertex normals.**
     - To compute the area-weighted normal at a given vertex, we first iterated through the triangle faces neighboring the vertex using the ```face()``` and ```next()``` methods in the half edge data structure. We also called ```vertex()->position``` to get the neighboring vertices and their corresponding positions. Then, for each adjacent face we found the normal vector by calculating the cross product of the two edge vectors of the face and multiplied by its area. The result is then added to a 3D Vector result which keeps track of the current neighboring cross products calculated so far. Finally, we return the result’s unit vector. 
@@ -36,8 +36,30 @@
         ![teapot.dae-default](./images/task3/task3-default.png)
     - Phong shading:
         ![teapot.dae-phong](./images/task3/task3-shading.png)
+***
 
 ### Task 4: Edge Flip
 - **Briefly explain how you implemented the edge flip operation and describe any interesting implementation / debugging tricks you have used.**
+    - We first check if the given edge input is a boundary edge using the isBoundary() function, as boundary edges cannot be edge flipped and are returned. Then, we use the ```twin()``` and ```next()``` pointers to move around the mesh and store the proper mesh elements such as the half edges, vertices, neighboring edges, and faces from these half edges. Finally, we set the pointers for every element in the modified mesh to its correct element using the ```setNeighbors``` function. We used the following diagram for reference in visualizing the edge flip operation and how the mesh elements are connected: 
+    ![image](./images/task4/image.png)
 - **Show screenshots of a mesh before and after some edge flips.**
+Before flip:
+![before-flip](./images/task4/before-flip.png)
+After flip:
+![after-flip](./images/task4/after-flip.png)
 - **Write about your eventful debugging journey, if you have experienced one.**
+    - We encountered some bugs while trying to find the right pointers for the next half edges and twin edges. By referring to the diagram, we were able to trace through the direction of each pointer to the next mesh element such as a corresponding edge or vertex, and backtrace when needed when encountering segfaults when trying to access an invalid mesh element. We also frequently printed the current vertex, edges, and faces we were traversing through and stored them in separate lists to organize them.
+***
+### Part 5: Edge Split
+- **Briefly explain how you implemented the edge split operation and describe any interesting implementation / debugging tricks you have used.**
+    - Unlike in part 4 where we just set the new pointers with new neighboring mesh elements, edge splitting requires adding a new vertex that acts as a midpoint for opposing vertices along an edge. We first check if the edge is again a boundary edge, in which case we just return the edge from the function.
+- **Show screenshots of a mesh before and after some edge splits.**
+- **Show screenshots of a mesh before and after a combination of both edge splits and edge flips.**
+- **Write about your eventful debugging journey, if you have experienced one.**
+    - We used the following diagram to visualize the edge-splitting process and 
+- **If you have implemented support for boundary edges, show screenshots of your implementation properly handling split operations on boundary edges.**
+***
+### Part 6: Loop Subdivision for Mesh Upsampling
+- **Briefly explain how you implemented the loop subdivision and describe any interesting implementation / debugging tricks you have used.**
+- **Take some notes, as well as some screenshots, of your observations on how meshes behave after loop subdivision. What happens to sharp corners and edges? Can you reduce this effect by pre-splitting some edges?**
+- **Load dae/cube.dae. Perform several iterations of loop subdivision on the cube. Notice that the cube becomes slightly asymmetric after repeated subdivisions. Can you pre-process the cube with edge flips and splits so that the cube subdivides symmetrically? Document these effects and explain why they occur. Also explain how your pre-processing helps alleviate the effects.**

@@ -52,7 +52,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "/Users/rachellee/Desktop/cs184/p2-meshedit-sp23-b-2/bez/teapot.bez"
+            argument = "/Users/rachellee/Desktop/cs184/p2-meshedit-sp23-b-2/dae/teapot.dae"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
